@@ -2,19 +2,19 @@ body
 {
   margin: 100px;
   font-family: Garamond;
-  color: rgb(10, 8, 32);
-  background-color: rgba(255, 185, 213, 0.808);
+  color: rgb(16, 11, 75);
+  background-color: rgba(182, 206, 250, 0.808);
   font-size: 200%;
   max-width: 1200px;
   margin: 0 auto;
 }
 .centered-rectangle {
-  background-color: rgba(243, 134, 194, 0.767);
+  background-color: rgba(152, 243, 223, 0.767);
   width: 100%;
   height: 50%;
   margin: 30px;
   box-sizing: border-box;
-  border: 3px solid rgb(111, 5, 138);
+  border: 3px solid rgb(7, 77, 47);
   padding: 20px;
   margin: auto;
 }
@@ -31,17 +31,17 @@ ol
 }
 a {
   text-decoration: none;
-  color: rgb(73, 8, 73);
+  color: rgb(17, 77, 64);
 }
 a:hover {
-  color: rgb(240, 0, 120);
+  color: rgb(243, 241, 245);
 }
 h1, h2
 {
-  color: rgb(85, 11, 73);
+  color: rgb(5, 63, 27);
   font-size: 100%;
   font-family: Trebuchet MS;
-  background-color: rgba(250, 65, 188);
+  background-color: rgba(44, 117, 74, 0.685);
   text-align: center;
 }
 figure {
@@ -56,4 +56,28 @@ h3 {
 footer {
   text-align: center;
   font-size: 90%;
+}
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(102, 158, 102);
+  width: 450px;
+  max-width: 100%;
+  padding: 15px 10px;
+  border: 3px solid #15c550;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+#date {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+#clock {
+  font-size: 35px;
+  font-weight: 550;
+  align-items: center;
 }

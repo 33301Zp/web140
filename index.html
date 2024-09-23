@@ -13,16 +13,24 @@
             <li>
                 <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 <a href="contract.html">Contract&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="about.html">About&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </li>
         </ol>
     </header>
     <main>
         <h2>Home</h2>
+        <div id="clock-container" class="clock-container">
+            <div id="date"></div>
+            <div id="clock"></div>
+        </div>
         <figure>
-
+            <img src="images/three_cats.jpg" alt="The three cats">
+            <figcaption><em>Yoshi, Shelley, and Marcella</em></figcaption>
         </figure>
             <div class="centered-rectangle">
                 <p>
+                    My project will be about my three cats. My color scheme will be blue, sage, and white. 
+                    My pages will include home,  and about to start with.
                 </p>
             </div>
     </main>
@@ -46,5 +54,31 @@
      </a>
         <p>&copy;  Created by Zoe Potts</p>
 	</footer>
+
+    <script>
+        function updateClock() {
+            const currentDateTime = new Date();
+
+            const year = currentDateTime.getFullYear();
+            const month = currentDateTime.getMonth() + 1; 
+            const day = currentDateTime.getDate();
+            const formattedDate = `${month < 10 ? '0' + month : month}/${day < 10 ? '0' + day : day}/${year}`;
+            const dateElement = document.getElementById('date');
+            dateElement.textContent = formattedDate;
+            
+            let hours = currentDateTime.getHours();
+            const minutes = currentDateTime.getMinutes();
+            const seconds = currentDateTime.getSeconds();
+            const amPm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12;
+            const formattedHours = hours < 10 ? '0' + hours : hours;
+            const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+            const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+            const clockElement = document.getElementById('clock');
+            clockElement.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds} ${amPm}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
 </body>
 </html>
