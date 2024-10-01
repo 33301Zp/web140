@@ -81,3 +81,20 @@ footer {
   font-weight: 550;
   align-items: center;
 }
+.slideshow-container {
+  text-align: center;
+}
+blockquote {
+  font-style: italic;
+  margin: 20px;
+  padding: 10px;
+  border-left: 4px solid #ccc;
+  color: #04040e;
+}
+.pull-quote {
+  font-size: 1.5em;
+  background-color:rgb(213, 252, 235);
+  border-left: 4px solid black;
+  padding: 15px;
+  margin: 20px;
+}

@@ -19,15 +19,128 @@
     </header>
     <main>
         <h2>Home</h2>
-        <figure>
 
-        </figure>
             <div class="centered-rectangle">
-                <p>
+                <div class="slideshow-container">
                     
-                </p>
+                    <div class="mySlides fade">
+                        <div class="numbertext">1/10</div>
+                        <img src="images/cat_photo_1.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2/10</div>
+                        <img src="images/cat_photo_2.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3/10</div>
+                        <img src="images/cat_photo_3.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4/10</div>
+                        <img src="images/cat_photo_4.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5/10</div>
+                        <img src="images/cat_photo_5.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6/10</div>
+                        <img src="images/cat_photo_6.jpg">
+                    </div>
+
+                    <div class="mySlides fade"><
+                        <div class="numbertext">7/10</div>
+                        <img src="images/cat_photo_7.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8/10</div>
+                        <img src="images/cat_photo_8.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">9/10</div>
+                        <img src="images/cat_photo_9.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">10/10</div>
+                        <img src="images/cat_photo_10.jpg">
+                    </div>
+
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+            </div>
+            <p>
+                We have three cats named Yoshi, Marcella, and Shelley. Yoshi is the orange cat whos about 18 years old. I grew 
+                up with him! Shelley is the black and gray cat who is about 6 years old. We found her meowing her lungs out sitting on 
+                top of our neighbors tire. She is the loudest cat in the group be far. Marcella is the black cat and she is the 
+                youngest. I used to work at a greenhouse and she was found in the woods there. So I brought her home with me. 
+            </p>
+            <p>
+                <blockquote cite="https://www.dailypaws.com/living-with-pets/pet-owner-relationship/cat-quotes">
+                Ernest Hemmingway said "One cat just leads to another."</blockquote>
+            </p>
+            <p>
+                That is true in my familys case. Cats are independent with a mind of their own. I have grown up with cats my whole life. They all have very 
+                different personalities. 
+            </p>
+            <p>
+                <blockquote class="pull-quote">"Cats are independent with a mind of their own"</blockquote>
+            </p>
     </main>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex =n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex =slides.length}
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                }               
+
+            </script>
 	<footer>
         <ol>
             <li>
