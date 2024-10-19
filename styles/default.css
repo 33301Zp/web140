@@ -21,8 +21,7 @@ body
 header 
 {
   font-family: garamond;
-  color:rgb(73, 73, 230);
-  font-size: 160%;
+  font-size: 120%;
   text-align: center;
 }
 ol
@@ -114,4 +113,46 @@ blockquote {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.yoshi-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+.yoshi-gallery div {
+  border: 6px solid #f8a545a4;
+}
+.yoshi-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shelley-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+.shelley-gallery div {
+  border: 6px solid #918980a4;
+}
+.shelley-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.marcella-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+.marcella-gallery div {
+  border: 6px solid #251806ee;
+}
+.marcella-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
