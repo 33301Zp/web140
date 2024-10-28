@@ -156,3 +156,18 @@ blockquote {
   height: 100%;
   object-fit: cover;
 }
+#videoShown {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+form {
+  margin-top: 50px;
+  text-align: center;
+}
+.laptopCat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

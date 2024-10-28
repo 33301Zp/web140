@@ -39,8 +39,39 @@
             </video>
         </div>
 
+        <h3>Fill out the form to unlock a video!</h3>
+
+        <form id="unlock" onsubmit="unlockVideo(event)">
+
+            <label for="first">First Name </label>
+            <input type="text" id="first" name="first" required><br><br>
+
+            <label for="last">Last Name </label>
+            <input type="text" id="last" name="last" required><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+        <img class="laptopCat" src="images/catGif.gif" alt="GIF">
+
+        <div id="videoShown">
+            <h3>Enjoy the video: &#127795;Shelley climbing a tree&#127795;</h3>
+            <video width="400" height="700" autoplay controls>
+                <source src="images/shelley_climbing.mp4" type="video/mp4">
+                Your browser doesn't support this video
+            </video>
+        </div>
+
     </div>
 </main>
+
+    <script>
+        function unlockVideo(event) {
+            event.preventDefault();
+            document.getElementById("videoShown").style.display = "block";
+        }
+    </script>
+
 	<footer>
         <ol>
             <li>
